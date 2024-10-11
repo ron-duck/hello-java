@@ -1,6 +1,6 @@
 # hello-java
 
-A simple hello world Java app with some coding errors for demoing SIG product integrations with various CI systems.
+A simple hello world Java app with some coding errors for demoing Black Duck product integrations with various CI systems.
 
 Build Commands
 - [pom.xml](pom.xml) - mvn clean compile
