@@ -14,8 +14,8 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         uses: synopsys-sig/synopsys-action@v1.13.0
         with:
-          polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
-          polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
+          polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
           polaris_application_name: RAF-ACME_Labs
           polaris_project_name: ${{ github.event.repository.name }}
           polaris_assessment_types: "SCA,SAST"
@@ -50,8 +50,8 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         uses: synopsys-sig/synopsys-action@v1.13.0
         with:
-          polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
-          polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
+          polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
+          polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
           polaris_application_name: RAF-ACME_Labs
           polaris_project_name: ${{ github.event.repository.name }}
           polaris_assessment_types: "SCA,SAST"
