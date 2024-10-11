@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main, master, develop, stage, release ]
   pull_request:
-    branches: [ main, master, develop, stage, release ]  
+    branches: '**' #[ main, master, develop, stage, release ]  
 jobs:
   polaris-scan:
     runs-on: [ ubuntu-latest ]
