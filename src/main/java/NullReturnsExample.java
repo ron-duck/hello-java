@@ -5,7 +5,7 @@ public class NullReturnsExample {
         return null;
     }
     public static Object returnB() {
-        return new Object();
+        return null; // new Object();
     }
     public static void testA() {
         // This demonstrates a very straightforward null-return bug
