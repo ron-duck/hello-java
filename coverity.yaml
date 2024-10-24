@@ -1,4 +1,62 @@
-capture:
-  build:
-    clean-command: mvn -B clean
-    build-command: mvn -B -DskipTests package
+# Coverity configuration file.
+# The schema is available here: <install-dir>/doc/configuration-schema.json
+# For help on individual settings:      coverity help config --setting <setting>
+# For a complete example configuration: coverity help config --show-all
+# For help on configuration syntax:     coverity help config --syntax
+analyze:
+
+  # Enables callgraph metrics output in the intermediate directory.
+  ##callgraph-metrics: false
+
+
+  # If no checker configuration is specified, the CLI will enable a set of
+  # checkers based on the files that were captured.
+  checkers:
+  
+    # Enables audit checkers.
+    audit: true
+    
+    # Specifies the aggressiveness level for the analysis. The aggressiveness
+    # level causes the analysis to make more or less aggressive assumptions
+    # during the analysis where the higher the aggressiveness level the more
+    # defects are reported.
+    # Valid values:
+    #   low
+    #   medium
+    #   high
+    aggressiveness-level: high
+
+    
+    checker-config:      
+    webapp-security:
+
+      # Enables the checkers that are used for web application security
+      # analysis. Default is true if project contains relevant sources, and
+      # false otherwise.
+      enabled: true
+
+      # Sets the web application checkers aggressiveness level.
+      # Valid values:
+      #   low
+      #   medium
+      #   high
+      aggressiveness-level: high   
+ 
+      # This is a map from trust option name to boolean to indicate whether the
+      # particular trust property should be trusted or distrusted. The trust option
+      # "all" controls whether all trust options should be trusted or distrusted.
+    trust:
+      all: false 
+
+# Specifies where the analysis results should be sent.
+commit:
+
+  # Coverity Connect configuration to use when committing defects to Coverity
+  # Connect.
+  connect:
+
+    # The name of the stream to commit the results to.
+    stream: hello-java
+
+    # Absolute URL of where to commit the Coverity Connect results.
+    url: http://192.168.56.103:8080
