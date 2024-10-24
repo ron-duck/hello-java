@@ -1,6 +1,6 @@
 public class NullReturnsExample {
     static int count = 0;
-    string password = "password";
+    String password = "password";
 
     public static Object returnA() {
         return null;
