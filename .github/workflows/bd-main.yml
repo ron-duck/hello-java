@@ -34,6 +34,7 @@ jobs:
         blackducksca_reports_sarif_create: true
         blackducksca_upload_sarif_report: true
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        detect_args: '--detect.excluded.detector.types=GIT'
         # include_diagnostics: true
 #    - name: Save Logs
 #      if: always()
