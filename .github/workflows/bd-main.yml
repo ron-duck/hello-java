@@ -1,4 +1,4 @@
-# example workflow for Black Duck SCA scans using the Black Duck Security Scan Action
+# Workflow for Black Duck SCA scans using the Black Duck Security Scan Action
 # https://github.com/marketplace/actions/black-duck-security-scan
 name: bd-ss-action
 on:
