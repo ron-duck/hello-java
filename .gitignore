@@ -1,3 +1,179 @@
 coverity.yaml.bak
 .gradle/8.8/fileHashes/fileHashes.bin
 .gradle/8.8/fileHashes/fileHashes.lock
+.bridge/bridge.log
+.bridge/Blackduck Installer/2025_Jan_13_20.26.10-stderr
+.bridge/Blackduck Installer/2025_Jan_13_20.26.10-stdout
+.bridge/Check pull request/2025_Jan_13_20.25.43-stderr
+.bridge/Check pull request/2025_Jan_13_20.25.43-stdout
+.bridge/Coverity Installer/2025_Jan_13_20.25.58-stderr
+.bridge/Coverity Installer/2025_Jan_13_20.25.58-stdout
+.bridge/Downloader Adapter/2025_Jan_13_20.25.46-stderr
+.bridge/Downloader Adapter/2025_Jan_13_20.25.46-stdout
+.bridge/Polaris Artifacts Uploader/2025_Jan_13_20.27.23-stderr
+.bridge/Polaris Artifacts Uploader/2025_Jan_13_20.27.23-stdout
+.bridge/Polaris Blackduck Execution/2025_Jan_13_20.27.12-stderr
+.bridge/Polaris Blackduck Execution/2025_Jan_13_20.27.12-stdout
+.bridge/Polaris Blackduck Execution/blackduck-artifacts.zip
+.bridge/Polaris Blackduck Execution/detect/bdio/blackduck_artifact/scan.bdio
+.bridge/Polaris Blackduck Execution/detect/runs/2025-01-14-01-27-14-839/extractions/GRADLE-0/root_project__hello_java__depth0_dependencyGraph.txt
+.bridge/Polaris Blackduck Execution/detect/runs/2025-01-14-01-27-14-839/extractions/GRADLE-0/rootProjectMetadata.txt
+.bridge/Polaris Blackduck Execution/detect/runs/2025-01-14-01-27-14-839/scan/components-with-locations.json
+.bridge/Polaris Blackduck Execution/detect/runs/2025-01-14-01-27-14-839/shared/gradle/init-detect.gradle
+.bridge/Polaris Blackduck Execution/detect/runs/2025-01-14-01-27-14-839/status/status.json
+.bridge/Polaris Blackduck Execution/detect/tools/detect-installed-tools.json
+.bridge/Polaris Controller/2025_Jan_13_20.25.43-stderr
+.bridge/Polaris Controller/2025_Jan_13_20.25.43-stdout
+.bridge/Polaris Coverity Capture/2025_Jan_13_20.26.10-stderr
+.bridge/Polaris Coverity Capture/2025_Jan_13_20.26.10-stdout
+.bridge/Polaris Coverity Capture/idir.zip
+.bridge/Polaris Coverity Capture/idir/build-cwd.txt
+.bridge/Polaris Coverity Capture/idir/build-log.txt
+.bridge/Polaris Coverity Capture/idir/BUILD.metrics.xml
+.bridge/Polaris Coverity Capture/idir/capture-files-log.txt
+.bridge/Polaris Coverity Capture/idir/record-timings.txt
+.bridge/Polaris Coverity Capture/idir/tu-timings.txt
+.bridge/Polaris Coverity Capture/idir/coverity-cli/capture-file-list-1019137179
+.bridge/Polaris Coverity Capture/idir/coverity-cli/capture-platform
+.bridge/Polaris Coverity Capture/idir/coverity-cli/config-hash
+.bridge/Polaris Coverity Capture/idir/coverity-cli/coverity-cli-log.txt
+.bridge/Polaris Coverity Capture/idir/coverity-cli/strip-path
+.bridge/Polaris Coverity Capture/idir/coverity-cli/timestamps.json
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/coverity_config.xml.bak
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-android-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-apt-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-ar-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-clangcc-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-clangcxx-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-csc-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-csc-config-1/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-csc-config-2/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-dotnet-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-1/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-2/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-3/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-4/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-5/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-6/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-7/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-8/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-g++-config-9/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-gcc-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-gcc-config-1/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-gcc-config-2/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-gcc-config-3/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-gcc-config-4/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-gcc-config-5/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-gcc-config-6/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-go-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-jar-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-java-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-javac-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-javaw-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-kotlin-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-kotlin-module-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-kotlinc-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-ld-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-msvc-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-msvc_devenv-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-msvc_lib-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-msvc_link-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-msvc_msbuild-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-prefix-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-razor-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-razor-config-1/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-razor-config-2/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-razor-config-3/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-razor-config-4/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-razor-config-5/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-razor-config-6/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-vbc-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/build-compiler-configs/template-vbc-config-1/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/coverity_config.xml.bak
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-capture-config-files-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-dart-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-html-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-javascript-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-jsx-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-php-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-python-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-ruby-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-typescript-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/coverity-cli/buildless-compiler-configs/template-vue-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/version
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/emit-db
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/emit-db.lock
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/emit-db.write-lock
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/13bc78efb2e5f3f921412d776f9828bb/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/13bc78efb2e5f3f921412d776f9828bb/coverity_config_created
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/13bc78efb2e5f3f921412d776f9828bb/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/13bc78efb2e5f3f921412d776f9828bb/capture-config-files-config-0/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/13bc78efb2e5f3f921412d776f9828bb/capture-config-files-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/8b03158932539812c9e2c4ed8d3785e9/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/8b03158932539812c9e2c4ed8d3785e9/coverity_config_created
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/8b03158932539812c9e2c4ed8d3785e9/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/8b03158932539812c9e2c4ed8d3785e9/html-config-0/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/8b03158932539812c9e2c4ed8d3785e9/html-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/coverity_config_created
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/jar-config-0/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/jar-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/java-config-0/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/java-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/javac-config-0/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/javac-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/javaw-config-0/configure-log.txt
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/javaw-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/template-android-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/template-capture-config-files-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/emit/BD-60364/config/e82ce7374de5df4688efa21f93bcc8fe/template-jsp-config-0/coverity_config.xml
+.bridge/Polaris Coverity Capture/idir/output/cli-diagnostics.json
+.bridge/Polaris Coverity Capture/idir/scan-transparency/cli-ignored-files
+.bridge/Polaris Coverity Capture/idir/scan-transparency/unconfigured-compilers
+.bridge/Polaris Coverity Capture/idir/telemetry/coverity/0194626b-3542-770f-b896-1d78273e72b2.jsonl
+.bridge/Polaris Initializer/2025_Jan_13_20.25.40-stderr
+.bridge/Polaris Initializer/2025_Jan_13_20.25.40-stdout
+.bridge/Polaris Issues Fetcher/2025_Jan_13_20.33.50-stderr
+.bridge/Polaris Issues Fetcher/2025_Jan_13_20.33.50-stdout
+.bridge/Polaris Policy Checker/2025_Jan_13_20.33.49-stderr
+.bridge/Polaris Policy Checker/2025_Jan_13_20.33.49-stdout
+.bridge/Polaris SCM Discovery/2025_Jan_13_20.25.39-stderr
+.bridge/Polaris SCM Discovery/2025_Jan_13_20.25.39-stdout
+.bridge/Polaris Status Provider/2025_Jan_13_20.33.52-stderr
+.bridge/Polaris Status Provider/2025_Jan_13_20.33.52-stdout
+.bridge/Polaris Waiter/2025_Jan_13_20.28.03-stderr
+.bridge/Polaris Waiter/2025_Jan_13_20.28.03-stdout
+.codesight/default.json
+.codesight/scan_configs/Black_Duck_SCA.json
+.codesight/scan_configs/Coverity.json
+.codesight/scan_configs/Polaris.json
+.gradle/8.12/gc.properties
+.gradle/8.12/checksums/checksums.lock
+.gradle/8.12/executionHistory/executionHistory.lock
+.gradle/8.12/fileChanges/last-build.bin
+.gradle/8.12/fileHashes/fileHashes.bin
+.gradle/8.12/fileHashes/fileHashes.lock
+.gradle/8.8/fileHashes/fileHashes.bin
+.gradle/8.8/fileHashes/fileHashes.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/cache.properties
+.vscode/settings.json
+build/reports/problems/problems-report.html
+.gradle/8.8/fileHashes/fileHashes.bin
+.gradle/8.8/fileHashes/fileHashes.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/cache.properties
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+coverity.conf
+.gradle/8.8/fileHashes/fileHashes.bin
+.gradle/8.8/fileHashes/fileHashes.lock
+.gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/buildOutputCleanup/cache.properties
