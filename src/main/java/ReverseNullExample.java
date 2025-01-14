@@ -1,6 +1,6 @@
 public class ReverseNullExample {
     public static Object callA(Object o) {
-        return "hi";
+        return "null";
     }
     public static Object callB(Object o) {
         return o.toString();
