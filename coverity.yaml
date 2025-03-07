@@ -3,44 +3,51 @@
 # For help on individual settings:      coverity help config --setting <setting>
 # For a complete example configuration: coverity help config --show-all
 # For help on configuration syntax:     coverity help config --syntax
+# Specifies how the project should be analyzed.
 analyze:
 
-  # Enables callgraph metrics output in the intermediate directory.
-  ##callgraph-metrics: false
-
+  # Specifies the aggressiveness level for the analysis. The aggressiveness
+  # level causes the analysis to make more or less aggressive assumptions
+  # during the analysis where the higher the aggressiveness level the more
+  # defects are reported.
+  # Valid values:
+  #   low
+  #   medium
+  #   high
+  aggressiveness-level: high
 
   # If no checker configuration is specified, the CLI will enable a set of
   # checkers based on the files that were captured.
   checkers:
-  
+
+    # Indicates whether all checkers should be enabled.
+    all: false
+
+    # Indicates whether all security checkers should be enabled. This includes
+    # the Security, Android Security, and Web App Security categories, and
+    # other security checkers that require explicit enablement.
+    all-security: true
+
     # Enables audit checkers.
     audit: true
-    
-    # Specifies the aggressiveness level for the analysis. The aggressiveness
-    # level causes the analysis to make more or less aggressive assumptions
-    # during the analysis where the higher the aggressiveness level the more
-    # defects are reported.
-    # Valid values:
-    #   low
-    #   medium
-    #   high
-    aggressiveness-level: high
 
-    
-    checker-config:      
+    # Map from checker name to configuration for the checker.
+    # The configuration indicates whether the checker should be enabled or not
+    # and allows users to set options used to configure the checker.
+    checker-config:
+    # Specifies how web application security analysis should be done.
     webapp-security:
 
       # Enables the checkers that are used for web application security
-      # analysis. Default is true if project contains relevant sources, and
-      # false otherwise.
-      enabled: true
+      # analysis.
+      ##enabled: true
 
       # Sets the web application checkers aggressiveness level.
       # Valid values:
       #   low
       #   medium
       #   high
-      aggressiveness-level: high   
+      aggressiveness-level: high
  
       # This is a map from trust option name to boolean to indicate whether the
       # particular trust property should be trusted or distrusted. The trust option
