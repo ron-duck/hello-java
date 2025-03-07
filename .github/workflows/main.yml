@@ -31,6 +31,24 @@ jobs:
         polaris_upload_sarif_report: 'true'
         github_token: ${{ secrets.GITHUB_TOKEN }}
         # include_diagnostics: true
+    - name: Polaris PR Scan
+      if: ${{ github.event_name == 'pull_request' }}
+      uses: blackduck-inc/black-duck-security-scan@v2.0.0
+      with:
+        polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
+        polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
+        polaris_application_name: RAF-ACME_Labs
+        polaris_project_name: ${{ github.event.repository.name }}
+        polaris_assessment_types: "SAST"
+        project_directory: ${{ vars.PROJECT_DIRECTORY }}
+          ### Uncomment below configuration for source code upload 
+          # polaris_assessment_mode: "SOURCE_UPLOAD"
+          # project_source_archive: ${{ vars.PROJECT_SOURCE_ARCHIVE }}
+          # project_source_excludes: ${{ vars.PROJECT_SOURCE_EXCLUDES }} # Accepts Multiple Values
+          # project_source_preserveSymLinks: true
+          ### Below configuration is used to enable feedback from Polaris security testing as pull request comment
+        polaris_prComment_enabled: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 #    - name: Save Logs
 #      if: always()
 #      uses: actions/upload-artifact@v4
