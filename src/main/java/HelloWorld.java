@@ -7,6 +7,6 @@ public class HelloWorld {
         catch (Exception e) { 
             System.out.println("Something went wrong."); 
         }
-        System.out.println("Hello World!");
+        System.out.println(secret);
     }
 }
