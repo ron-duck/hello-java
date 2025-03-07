@@ -1,6 +1,6 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        String secret = null;
+        String secret = "Not a secret";
             try { 
                 javax.crypto.spec.SecretKeySpec keyspec = new javax.crypto.spec.SecretKeySpec(secret.getBytes("UTF-8"), "AES"); 
             }
