@@ -71,7 +71,7 @@ jobs:
             polaris.prcomment.enabled='true' \
             polaris.branch.parent.name=${{ github.event.base_ref }} \
             github.repository.pull.number=${{ github.event.number }}
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+        #    github_token: ${{ secrets.GITHUB_TOKEN }}
         #if: ${{ github.event_name == 'pull_request' }}
         #uses: blackduck-inc/black-duck-security-scan@v2.0.0
         #with:
