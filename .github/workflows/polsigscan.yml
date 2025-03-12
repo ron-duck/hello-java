@@ -26,7 +26,7 @@ jobs:
         polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
         polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
         polaris_assessment_types: 'SCA'
-        polaris.test.sca.type: 'SCA-SIGNATURE'
+        polaris_test_sca_type: 'SCA-SIGNATURE'
         polaris_application_name: RAF-ACME_LABS
         polaris_prComment_enabled: 'true'
         polaris_reports_sarif_create: 'true'
