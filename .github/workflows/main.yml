@@ -40,7 +40,7 @@ jobs:
         polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
         polaris_application_name: RAF-ACME_Labs
         polaris_project_name: ${{ github.event.repository.name }}
-        polaris_assessment_types: "SAST"
+        polaris_assessment_types: 'SAST,SCA'
         project_directory: ${{ vars.PROJECT_DIRECTORY }}
           ### Uncomment below configuration for source code upload 
           # polaris_assessment_mode: "SOURCE_UPLOAD"
