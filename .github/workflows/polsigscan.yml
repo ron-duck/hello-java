@@ -1,6 +1,6 @@
 # example workflow for Polaris scans using the Black Duck Security Scan Action
 # https://github.com/marketplace/actions/black-duck-security-scan
-name: polaris-ss-action
+name: polaris-ss-sig-action
 on:
   push:
     branches: [ main, master, develop, stage, release ]
@@ -25,7 +25,7 @@ jobs:
       with:
         polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
         polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
-        polaris_assessment_types: 'SAST,SCA'
+        polaris_assessment_types: 'SCA'
         polaris.test.sca.type: SCA-SIGNATURE
         polaris_application_name: RAF-ACME_LABS
         polaris_prComment_enabled: 'true'
