@@ -53,7 +53,7 @@ jobs:
     - name: Signal Scan
       run: |
         curl -fLsS -o bridge.zip ${{ vars.BRIDGECLI_LINUX64 }} && unzip -qo -d ${{ runner.temp }} bridge.zip && rm -f bridge.zip
-        ${{ runner.temp }}/bridge-cli-bundle-linux64/bridge-cli --verbose --stage signal signal.mode=PROJECT signal.platform=polaris polaris.serverurl=https://poc.polaris.blackduck.com polaris.accessToken=${{ secrets.POLARIS_ACCESSTOKEN }} 
+        ${{ runner.temp }}/bridge-cli-bundle-linux64/bridge-cli --verbose --stage signal signal.mode=PROJECT signal.platform=polaris polaris.serverurl=https://poc.polaris.blackduck.com polaris.accessToken=${{ secrets.POLARIS_ACCESSTOKEN }} polaris.application.name: RAF-ACME_Labs polaris.project.name: ${{ github.event.repository.name }} 
 #    - name: Save Logs
 #      if: always()
 #      uses: actions/upload-artifact@v4
