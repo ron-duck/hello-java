@@ -1,0 +1,43 @@
+name: signal-bridge-polaris-mk
+on:
+  push:
+    branches: [ main, master, develop, stage, release ]
+  workflow_dispatch:
+jobs:
+  signal:
+    runs-on: ubuntu-latest
+    env:
+      BRIDGE_POLARIS_SERVERURL: ${{ vars.POLARIS_SERVERURL }}
+      BRIDGE_POLARIS_ACCESSTOKEN: ${{ secrets.POLARIS_ACCESSTOKEN }}
+      BRIDGE_SIGNAL_LLM_URI: ${{ vars.LLM_URL }}
+      BRIDGE_SIGNAL_LLM_KEY: ${{ secrets.LLM_KEY }}
+      BRIDGE_POLARIS_APPLICATION_NAME: raf-hello-java
+      BRIDGE_POLARIS_PROJECT_NAME: ${{ github.event.repository.name }}
+      BRIDGE_POLARIS_BRANCH_NAME: ${{ github.ref_name }}
+    steps:
+    - name: Checkout Source
+      uses: actions/checkout@v6
+    - name: Restore Signal MK Store
+      uses: actions/cache/restore@v5
+      with:
+        path: signal-mk.store
+        key: ${{ runner.os }}-mergekey-${{ hashFiles('signal-mk.store/**/*') }}
+        restore-keys: ${{ runner.os }}-mergekey-
+    - name: Signal Scan
+      run: |
+        curl -fLsS -o bridge.zip ${{ vars.BRIDGECLI_LINUX64 }} && unzip -qo -d ${{ runner.temp }} bridge.zip && rm -f bridge.zip
+        ${{ runner.temp }}/bridge-cli-bundle-linux64/bridge-cli --verbose --stage signal signal.mode=PROJECT signal.platform=polaris \
+          signal.args='--llm-model claude-sonnet-4-6 --merge-keys true'
+    - name: Save Signal MK Store
+      if: always()
+      uses: actions/cache/save@v5
+      with:
+        path: signal-mk.store
+        key: ${{ runner.os }}-mergekey-${{ hashFiles('signal-mk.store/**/*') }}
+#    - name: Save Logs
+#      if: always()
+#      uses: actions/upload-artifact@v7
+#      with:
+#        name: bridge-logs
+#        path: ${{ github.workspace }}/.bridge
+#        include-hidden-files: true
