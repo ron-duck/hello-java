@@ -36,3 +36,7 @@ jobs:
           polaris_waitForScan: false
           ### Mark build status if policy violating issues are found
           mark_build_status: success  # Set to success, failure, or skip
+      - name: Signal Scan
+        run: |
+         curl -fLsS -o bridge.zip ${{ vars.BRIDGECLI_LINUX64 }} && unzip -qo -d ${{ runner.temp }} bridge.zip && rm -f bridge.zip
+         ${{ runner.temp }}/bridge-cli-bundle-linux64/bridge-cli --verbose --stage signal signal.mode=PROJECT signal.platform=polaris
