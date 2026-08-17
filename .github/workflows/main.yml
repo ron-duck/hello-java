@@ -19,19 +19,19 @@ jobs:
         java-version: 17
         distribution: microsoft
         cache: maven
-   # - name: Polaris Scan
-   #   if: ${{ github.event_name != 'pull_request' }}
-   #   uses: blackduck-inc/black-duck-security-scan@v2.0.0
-   #   with:
-   #     polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
-  #      polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
-   #     polaris_assessment_types: 'SAST,SCA'
-   #     polaris_application_name: RAF-ACME_LABS
-   #     polaris_prComment_enabled: 'true'
-    #    polaris_reports_sarif_create: 'true'
-    #    polaris_upload_sarif_report: 'true'
-    #    github_token: ${{ secrets.GITHUB_TOKEN }}
-        # include_diagnostics: true
+    - name: Polaris Scan
+      if: ${{ github.event_name != 'pull_request' }}
+      uses: blackduck-inc/black-duck-security-scan@v2.0.0
+      with:
+        polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
+        polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
+        polaris_assessment_types: 'SAST,SCA'
+        polaris_application_name: RAF-ACME_LABS
+        polaris_prComment_enabled: 'true'
+        polaris_reports_sarif_create: 'true'
+        polaris_upload_sarif_report: 'true'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        #include_diagnostics: true
     #- name: Polaris PR Scan
     #  if: ${{ github.event_name == 'pull_request' }}
     #  uses: blackduck-inc/black-duck-security-scan@v2.0.0
@@ -50,10 +50,10 @@ jobs:
           ### Below configuration is used to enable feedback from Polaris security testing as pull request comment
      #   polaris_prComment_enabled: 'true'
      #   github_token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Signal Scan
-      run: |
-        curl -fLsS -o bridge.zip ${{ vars.BRIDGECLI_LINUX64 }} && unzip -qo -d ${{ runner.temp }} bridge.zip && rm -f bridge.zip
-        ${{ runner.temp }}/bridge-cli-bundle-linux64/bridge-cli --verbose --stage signal signal.mode=PROJECT signal.platform=polaris polaris.serverurl=https://poc.polaris.blackduck.com polaris.accessToken=${{ secrets.POLARIS_ACCESSTOKEN }} polaris.application.name: RAF-ACME_Labs polaris.project.name: ${{ github.event.repository.name }} 
+   # - name: Signal Scan
+   #   run: |
+   #     curl -fLsS -o bridge.zip ${{ vars.BRIDGECLI_LINUX64 }} && unzip -qo -d ${{ runner.temp }} bridge.zip && rm -f bridge.zip
+   #     ${{ runner.temp }}/bridge-cli-bundle-linux64/bridge-cli --verbose --stage signal signal.mode=PROJECT signal.platform=polaris polaris.serverurl=https://poc.polaris.blackduck.com polaris.accessToken=${{ secrets.POLARIS_ACCESSTOKEN }} polaris.application.name: RAF-ACME_Labs polaris.project.name: ${{ github.event.repository.name }} 
 #    - name: Save Logs
 #      if: always()
 #      uses: actions/upload-artifact@v4
